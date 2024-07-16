@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const color = "blue"
+        switch(color){
+            case 'red':
+                console.log("color is red")
+                break;
+            case 'yellow':
+                console.log("color is yellow")
+                break;
+            default:
+                console.log("color is not present")
+        }
+
+
+        const TodayDate = new Date().getDay();
+        let day;
+        switch(TodayDate){
+            case 0:day = "Sunday";
+                break;
+            case 1:day = "Monday";
+                break;
+            case 2:day = "Tuesday";
+                break;
+            case 3:day = "Wednsday";
+                break;
+            case 4:day ="Thursday";
+                break;
+            case 5:day = "Friday";
+                break;
+            case 6:day = "saturday";
+                break;
+            default: day = "invalid input";
+                break;
+        }
+        console.log("Today day :",day);
+    </script>
+</body>
+</html>

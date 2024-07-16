@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers1 = [1,4,6,78,90,9]
+        console.log(numbers1)
+
+
+        const numbers2 = new Array(22,4,5,67,78);
+        console.log(numbers2)
+
+        const fruits = ["apple","pinaplle",'mango'];
+        console.log(fruits);
+
+        const data = [1, "hello", true, false, null]
+        console.log(data)
+
+        console.log(data.length)
+
+        console.log(Array.isArray(data)) // return true or false
+
+        console.log(data[0]);
+
+        // replace
+        data[1] = "Hi";
+        console.log(data);
+
+        // index value first occured element
+        console.log(data.indexOf('Hi'));
+
+        // mutating the array
+        // adding last
+        data.push(100);
+        console.log(data);
+
+        // remove last
+        data.pop();
+        console.log(data);
+
+        // adding front
+        data.unshift(1000);
+        console.log(data)
+
+        // remove front
+        data.shift();
+        console.log(data);
+
+        // remove
+        data.splice(1,3)
+        console.log(data);
+
+        const num1 = [1,4,6,8,95,4];
+        const num2 = [5,6,78,2,3,5];
+
+        num1.reverse();
+        console.log(num1);
+
+        const result = num1.concat(num2);
+        console.log(result);
+
+        num1.sort();
+        console.log(num1);
+
+
+    </script>
+</body>
+</html>

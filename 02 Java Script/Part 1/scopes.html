@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // local variable have the highest precedence than local variable
+
+        const color = "red";//global variable
+        {
+            const  message = "Hello GoodMorning";
+            console.log(message);
+            console.log(color);//global variable so we can access
+        }
+        // error because of printing local variable
+        // console.log(message);
+    </script>
+</body>
+</html>

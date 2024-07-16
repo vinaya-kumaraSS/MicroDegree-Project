@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(){
+            console.log("Hello Function")
+            return 5
+        }
+        console.log(greet())
+
+        // output :
+                    // Hello Function
+                    // 5
+
+
+
+
+    function greeting(firstname){
+        console.log("hello",firstname)
+    }                 
+    greeting("vinay")
+
+// ----------------------------function declaration--------------------------------
+    const message = function(a){
+        return a*a
+    }
+    console.log(message(10))
+
+// ---------------------IIFE - Immedietly invokable function expression------------------------
+(function(){
+    console.log("Alvas college");
+})();
+    </script>
+</body>
+</html>

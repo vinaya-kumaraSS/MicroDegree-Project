@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const person = {
+            firstname : "vinay",
+            age : 21,
+            email : "vinaykumarss904@gmail.com",
+            hobbies :["coding","music listening", "sleeping"],
+            address : {
+                city : "soraba",
+                district : "shimoga",
+                state : "karnataka"
+            },
+
+            // creating method
+            marks : function(){
+                return 34;
+            },
+
+            // creating method
+            getDOB : function(){
+                return 2024 - this.age;
+            },
+        }
+        let obj = person;   //creating a object
+        console.log(obj);
+        console.log(obj.firstname);
+        console.log(obj.age);
+        console.log(obj.email);
+        console.log(obj.hobbies); //(3) ['coding', 'music listening', 'sleeping']
+        console.log(obj.hobbies[1])  //music listening
+
+        console.log(obj.address);
+        console.log(obj.address.district);   //shimoga
+
+        console.log(obj.marks());     //34
+
+        console.log(obj.getDOB());    //2003
+
+
+
+
+        // Array of Objects
+
+        const student = [
+            {
+                sname : "vinay",
+                age : 25
+            },
+            {
+                sname : "pooja",
+                age : 28
+            }
+        ]
+
+        console.log(student[0].sname); //vinay
+
+
+        // printing all the details
+
+        for(let i=0; i<student.length;i++)
+        {
+            console.log(student[i].sname);
+            console.log(student[i].age);
+        }
+    </script>
+</body>
+</html>

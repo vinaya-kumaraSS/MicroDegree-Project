@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --gradiant-color : linear-gradient(rgb(230,16,201), #fdba02);
+    --background-color : #393f4d; 
+    --primary-color : #fdba02;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: var(--background-color);
+    border: 2rem solid transparent;
+    border-image: linear-gradient(95deg,#D3959B, #3a7bd5);
+    border-image-slice: 2;
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+}
+.logo{
+    width: 35%;
+    height: 100px;
+}
+.logo h1{
+    line-height: 100px;
+    padding-left: 10rem;
+    font-size: 2.0rem;
+    /* padding-top: 1.5rem; */
+}
+
+ul{
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+.items{
+    width: 50%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    list-style: none;
+    padding-top: 2rem;
+}
+
+.items li a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.font{
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.font h2{
+    padding-top: 10rem;
+}
+h4{
+    font-size: 1.5rem;
+    text-align: center;
+    background: #e7e4da;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 1.5rem;
+    text-justify: newspaper;
+}
+.font h3{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.font h5{
+    font-weight: bolder;
+    font-family: 'Peddana', serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+    background: #e7e4da;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-justify: distribute-all-lines;
+}
+
+/* Hero Section */
+#hero{
+    height: 35rem;
+}
+
+/* about Section */
+#about-image{
+    width: 35rem;
+    height: 25rem;
+}
+.about-heading{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.about-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+}
+.about-content{
+    padding: 0 3rem 0 3rem;
+}
+
+/* Servies Section */
+.service-heading{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.services{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    padding:0 2rem 5rem 2rem;
+}
+
+/* Article Section */
+
+.article-image{
+    width: 30rem;
+    height: 15rem;
+}
+
+.article-heading{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.article-1{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content:space-between ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.article-2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content:space-between ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.article-3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content:space-between ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+/* footer */
+.footer-heading{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+}
+
